@@ -1,0 +1,171 @@
+<!DOCTYPE Html>
+
+<html class="h-100">
+
+<head>
+    <title>Portfilio</title>
+    <link rel="stylesheet" href="Bootstrap.min.css" />
+    <link rel="stylesheet" href="Bootstrap-icons.css">
+    <style>
+        body {
+            background-image: url('Background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            backdrop-filter: blur(5px);
+        }
+
+        .Card {
+            position: relative;
+            width: 900px;
+            overflow: hidden;
+            height: 500px;
+            border-radius: 20px;
+        }
+
+        .Content {
+            margin: 50px 40px 80px 40px;
+        }
+
+        .Buttons {
+            margin: 20px 0 0 0;
+            animation: Buttons_Anim 1.5s;
+            border: 2px var(--edge-border-pressed) solid;
+            border-radius: 2px;
+        }
+
+        @keyframes Buttons_Anim {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            60% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+        }
+
+        .H1{
+            animation: text_anim 0.5s;
+            color: #041077;
+        }
+        
+        
+         .Text {
+            animation: Text_Anim 0.8s;
+        }
+
+        @keyframes Text_Anim {
+            0% {
+                opacity: 0;
+                transform: translateX(-10px);
+            }
+            40% {
+                opacity: 0;
+                transform: translateX(-10px);
+            }
+        }
+
+        .Image {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            animation: Image_Anim 0.5s;
+        }
+
+        .Avatar {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            top: 180px;
+            right: 90px;
+            animation: Avatar_Anim 0.8s;
+        }
+
+        @keyframes Image_Anim {
+            0% {
+                opacity: 0;
+                transform: translateX(400px);
+            }
+        }
+
+        @keyframes Avatar_Anim {
+            0% {
+                opacity: 0;
+                text-emphasis: none;
+                text-height: auto;
+                
+                transform: scale(0);
+            }
+            40% {
+                opacity: 0;
+                transform: rotate(60deg) scale(0);
+            }
+        }
+
+        .UL>li:nth-child(1) {
+            animation: UL_Anim 0.7s;
+        }
+
+        .UL>li:nth-child(2) {
+            animation: UL_Anim 1.5s;
+        }
+
+        .UL>li:nth-child(3) {
+            animation: UL_Anim 2s;
+        }
+    
+        .UL>li:nth-child(4) {
+            animation: UL_Anim 2.5s;
+        }
+
+        @keyframes UL_Anim {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+        }
+        .profil{
+            position: absolute;
+            animation: Buttons_Anim 1.5s;
+            Position : absolute;
+            Right : 350px;
+            Bottom : 200px;
+        }
+    </style>
+</head>
+
+<body class="d-flex align-items-center justify-content-center h-100">
+
+    <div class="Card card shadow">
+        <img class="Image" src="Image.png">
+        <img class="Avatar" src="Avatar.png">
+        <div class="body-content p-3">
+            <div class="Content">
+               
+                <div class="Text text-muted">
+                    Hello, I'm<h1 class="H1">Fanilo Harijaona</h1>, a Designer & Product Designer.
+                    <br />
+                    
+                </div>
+                <br />
+                <ul class="UL">
+                    <li>UI/UX</li>
+                    <li>Product Designer</li>
+                    <li>Web Design</li>
+                    <li>Front-end</li>
+                </ul>              
+                <div class="Buttons">
+                    <a href="https://web.facebook.com/profile.php?id=100005193406024"><button class="btn btn-outline-primary btn-sm"><i class="bi bi-facebook"></i> Facebook</button></a>
+                    <a href="https://www.instagram.com/nomena_af"><button class="btn btn-outline-danger btn-sm"><i class="bi bi-instagram"></i> Instagram</button></a>
+                    <a href="mailto:hofanylo19@gmail.com"><button class="btn btn-outline-info btn-sm"><i class="bi bi-mailbox"></i> e-mail</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="Bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
